@@ -1,0 +1,26 @@
+# Dependency directories
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# Runtime data
+pids/
+*.pid
+*.pid.lock
+
+# Cache directories
+.nyc_output/
+coverage/
+
+# Build directories
+dist/
+build/
+
+# IDE and OS files
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
