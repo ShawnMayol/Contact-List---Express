@@ -3,21 +3,27 @@ const express = require('express');
 
 // create express app
 const app = express();
+
+// Middleware setup
 app.use(cors());
-
-// setup server port
-const port = process.env.PORT || 3000;
-
-// parse requests of content-type - application/json and application/x-www-form-urlencoded
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// define a root route
+// Import the contact routes
+const contactRoutes = require('./src/routes/contact.route');
+
+// Setup server port
+const port = process.env.PORT || 3000;
+
+// Use the contact routes
+contactRoutes(app);
+
+// Define a root route
 app.get('/', (req, res) => {
     res.send("Hello World");
 });
 
-// listen for requests
+// Listen for requests
 app.listen(port, () => {
     console.log(`Server is listening on port: ${port}`);
 });
