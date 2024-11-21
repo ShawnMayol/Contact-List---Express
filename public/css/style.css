@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #191414;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #282828;
+    border-radius: 8px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #333;
+    border-radius: 2.5px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #1db954;
+    color: #ffffff;
+}
+
+td {
+    background-color: #333333;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.actions button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.delete {
+    background-color: #e60000;
+    color: white;
+}
+
+.edit {
+    background-color: #1db954;
+    color: white;
+}
+
+.edit:hover {
+    background-color: #1ed760;
+}
+
+.delete:hover {
+    background-color: #ff1e1e;
+}
+
+button:focus {
+    outline: none;
+}
+
+.btn-container {
+    text-align: right;
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#add-contact-btn {
+    background-color: #1db954;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-contact-btn:hover {
+    background-color: #1ed760;
+}
+
+#add-contact-btn:focus {
+    outline: none;
+}
+
+.go-back-btn {
+    background-color: #1db954;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.go-back-btn:hover {
+    background-color: #1ed760;
+}
+
+.go-back-btn:focus {
+    outline: none;
+}
