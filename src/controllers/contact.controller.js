@@ -17,7 +17,7 @@ exports.create = (req, res) => {
         firstName: req.body.firstName,
         emailAddress: req.body.emailAddress,
         contactNumber: req.body.contactNumber,
-        isDeleted: 0 // Default value for a new contact
+        isDeleted: 0
     });
 
     // Insert the new contact into the database
